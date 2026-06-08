@@ -66,3 +66,16 @@ Makefile
 # Generated executables
 app
 test_app
+
+# CMake
+build/
+CMakeCache.txt
+CMakeFiles/
+
+# Generated files
+*.o
+*.obj
+*.exe
+*.elf
+*.bin
+*.hex

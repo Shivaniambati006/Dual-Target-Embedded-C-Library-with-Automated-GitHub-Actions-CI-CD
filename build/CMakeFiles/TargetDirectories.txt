@@ -1,5 +1,0 @@
-D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/mathlib.dir
-D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/app.dir
-D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/test_app.dir
-D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/ALL_BUILD.dir
-D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/ZERO_CHECK.dir
