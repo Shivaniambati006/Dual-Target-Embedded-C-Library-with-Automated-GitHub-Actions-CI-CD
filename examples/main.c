@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "mathlib.h"
+#include "platform.h"
 
 int main()
 {
@@ -7,6 +8,9 @@ int main()
     printf("Subtract: %d\n", subtract(10, 5));
     printf("Max: %d\n", max(10, 5));
     printf("Min: %d\n", min(10, 5));
+
+    platform_init();
+    platform_delay_ms(100);
 
     return 0;
 }
