@@ -99,7 +99,7 @@ events:
       The output was:
       0
       MSBuild version 18.4.0+6e61e96ac for .NET Framework
-      Build started 09-06-2026 00:35:15.
+      Build started 09-06-2026 00:51:43.
       
       Project "D:\\GITHUB\\Advanced Microprocessor\\dual-target-c-library\\build\\CMakeFiles\\4.3.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -128,7 +128,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.63
+      Time Elapsed 00:00:00.98
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -1239,8 +1239,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/CMakeScratch/TryCompile-rhguk2"
-      binary: "D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/CMakeScratch/TryCompile-rhguk2"
+      source: "D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/CMakeScratch/TryCompile-rom0xh"
+      binary: "D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/CMakeScratch/TryCompile-rom0xh"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1249,39 +1249,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/CMakeScratch/TryCompile-rhguk2'
+        Change Dir: 'D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/CMakeScratch/TryCompile-rom0xh'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e1a63.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1c2b8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.4.0+6e61e96ac for .NET Framework
-        Build started 09-06-2026 00:35:18.
+        Build started 09-06-2026 00:51:45.
         
-        Project "D:\\GITHUB\\Advanced Microprocessor\\dual-target-c-library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhguk2\\cmTC_e1a63.vcxproj" on node 1 (default targets).
+        Project "D:\\GITHUB\\Advanced Microprocessor\\dual-target-c-library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rom0xh\\cmTC_1c2b8.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\GITHUB\\Advanced Microprocessor\\dual-target-c-library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhguk2\\Debug\\".
-          Creating directory "cmTC_e1a63.dir\\Debug\\cmTC_e1a63.tlog\\".
+          Creating directory "D:\\GITHUB\\Advanced Microprocessor\\dual-target-c-library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rom0xh\\Debug\\".
+          Creating directory "cmTC_1c2b8.dir\\Debug\\cmTC_1c2b8.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_e1a63.dir\\Debug\\cmTC_e1a63.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_e1a63.dir\\Debug\\cmTC_e1a63.tlog\\unsuccessfulbuild".
+          Creating "cmTC_1c2b8.dir\\Debug\\cmTC_1c2b8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1c2b8.dir\\Debug\\cmTC_1c2b8.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_e1a63.dir\\Debug\\\\" /Fd"cmTC_e1a63.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_1c2b8.dir\\Debug\\\\" /Fd"cmTC_1c2b8.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35728 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_e1a63.dir\\Debug\\\\" /Fd"cmTC_e1a63.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_1c2b8.dir\\Debug\\\\" /Fd"cmTC_1c2b8.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\GITHUB\\Advanced Microprocessor\\dual-target-c-library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhguk2\\Debug\\cmTC_e1a63.exe" /INCREMENTAL /ILK:"cmTC_e1a63.dir\\Debug\\cmTC_e1a63.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/CMakeScratch/TryCompile-rhguk2/Debug/cmTC_e1a63.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/CMakeScratch/TryCompile-rhguk2/Debug/cmTC_e1a63.lib" /MACHINE:X64  /machine:x64 cmTC_e1a63.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_e1a63.vcxproj -> D:\\GITHUB\\Advanced Microprocessor\\dual-target-c-library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhguk2\\Debug\\cmTC_e1a63.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\GITHUB\\Advanced Microprocessor\\dual-target-c-library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rom0xh\\Debug\\cmTC_1c2b8.exe" /INCREMENTAL /ILK:"cmTC_1c2b8.dir\\Debug\\cmTC_1c2b8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/CMakeScratch/TryCompile-rom0xh/Debug/cmTC_1c2b8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build/CMakeFiles/CMakeScratch/TryCompile-rom0xh/Debug/cmTC_1c2b8.lib" /MACHINE:X64  /machine:x64 cmTC_1c2b8.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_1c2b8.vcxproj -> D:\\GITHUB\\Advanced Microprocessor\\dual-target-c-library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rom0xh\\Debug\\cmTC_1c2b8.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_e1a63.dir\\Debug\\cmTC_e1a63.tlog\\unsuccessfulbuild".
-          Touching "cmTC_e1a63.dir\\Debug\\cmTC_e1a63.tlog\\cmTC_e1a63.lastbuildstate".
-        Done Building Project "D:\\GITHUB\\Advanced Microprocessor\\dual-target-c-library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rhguk2\\cmTC_e1a63.vcxproj" (default targets).
+          Deleting file "cmTC_1c2b8.dir\\Debug\\cmTC_1c2b8.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1c2b8.dir\\Debug\\cmTC_1c2b8.tlog\\cmTC_1c2b8.lastbuildstate".
+        Done Building Project "D:\\GITHUB\\Advanced Microprocessor\\dual-target-c-library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rom0xh\\cmTC_1c2b8.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.90
+        Time Elapsed 00:00:00.83
         
       exitCode: 0
   -

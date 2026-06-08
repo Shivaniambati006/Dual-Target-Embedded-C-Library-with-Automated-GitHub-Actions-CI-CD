@@ -182,6 +182,9 @@ DualTargetCLibrary_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 DualTargetCLibrary_SOURCE_DIR:STATIC=D:/GITHUB/Advanced Microprocessor/dual-target-c-library
 
+//Target platform
+TARGET_PLATFORM:STRING=HOST
+
 
 ########################
 # INTERNAL cache entries

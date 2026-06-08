@@ -309,6 +309,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="D:\GITHUB\Advanced Microprocessor\dual-target-c-library\src\mathlib.c" />
+    <ClCompile Include="D:\GITHUB\Advanced Microprocessor\dual-target-c-library\platform\host\platform_host.c" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

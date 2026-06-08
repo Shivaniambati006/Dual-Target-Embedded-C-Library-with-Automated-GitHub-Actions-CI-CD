@@ -4,6 +4,9 @@
     <ClCompile Include="D:\GITHUB\Advanced Microprocessor\dual-target-c-library\src\mathlib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\GITHUB\Advanced Microprocessor\dual-target-c-library\platform\host\platform_host.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\GITHUB\Advanced Microprocessor\dual-target-c-library\CMakeLists.txt" />
