@@ -1,87 +1,63 @@
-# Dual-Target Embedded C Library with Automated GitHub Actions CI/CD Pipeline
+# Dual-Target Embedded C Library
 
-## Overview
-
-This project is a modular Embedded C library designed to support both **Host (PC)** and **Embedded** platforms from a single codebase.
-
-The project demonstrates:
-
-- Modular C programming
-- Platform abstraction
-- Dual-target architecture
-- Unit testing
-- CMake build system
-- GitHub Actions Continuous Integration (CI)
+A modular Embedded C library that supports both Host and Embedded builds using CMake. The project includes automated unit testing and GitHub Actions CI to ensure code quality.
 
 ---
 
 ## Features
 
-- Modular math library
+- Modular C library
+- Host and Embedded build support
+- CMake build system
+- GitHub Actions CI
+- Unit testing
 - Platform abstraction layer
-- Host and Embedded implementations
-- Unit tests
-- CMake-based build system
-- Automated GitHub Actions workflow
+- Well-documented public API
 
 ---
 
 ## Project Structure
 
-```
+```text
 dual-target-c-library/
 │
-├── examples/
-│   └── main.c
-│
-├── include/
-│   ├── mathlib.h
-│   └── platform.h
-│
-├── src/
-│   └── mathlib.c
-│
-├── tests/
-│   └── test_mathlib.c
-│
+├── include/                 # Public header files
+├── src/                     # Library source code
+├── examples/                # Example application
+├── tests/                   # Unit tests
 ├── platform/
-│   ├── host/
-│   │   └── platform_host.c
-│   │
-│   └── embedded/
-│       └── platform_embedded.c
-│
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-│
+│   ├── host/                # Host-specific implementation
+│   └── embedded/            # Embedded-specific implementation
+├── .github/workflows/       # GitHub Actions
 ├── CMakeLists.txt
 └── README.md
 ```
 
 ---
 
-## Build
+## Build Instructions
 
-Configure the project:
+### Configure
 
 ```bash
 cmake -S . -B build
 ```
 
-Build:
+### Build
 
 ```bash
 cmake --build build
 ```
 
-Run the example:
+### Run Tests
+
+Windows
 
 ```bash
-./build/app
+./build/Debug/test_app.exe
 ```
 
-Run the tests:
+Linux
 
 ```bash
 ./build/test_app
@@ -89,39 +65,33 @@ Run the tests:
 
 ---
 
-## CI Pipeline
+## Library Functions
 
-Every push to the `main` branch automatically:
-
-- Builds the Host target
-- Runs all unit tests
-- Builds the Embedded target
-
-using GitHub Actions.
+- add()
+- subtract()
+- multiply()
+- divide()
+- max()
+- min()
 
 ---
 
 ## Technologies Used
 
-- C
+- C11
 - CMake
 - Git
 - GitHub
 - GitHub Actions
-- GCC
+- MSVC / GCC
 
 ---
 
-## Future Improvements
+## Current Status
 
-- Additional math functions
-- Embedded hardware support
-- Code coverage
-- Continuous Deployment (CD)
-- Cross-compilation support
+- Host Build
+- Embedded Build
+- Unit Tests
+- Continuous Integration (CI)
 
----
-
-## License
-
-MIT License
+Project Status: Active Development
