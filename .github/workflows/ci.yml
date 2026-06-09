@@ -55,3 +55,19 @@ jobs:
 
       - name: Build Embedded Target
         run: cmake --build build_embedded
+
+      - name: Upload Host Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: host-build
+          path: |
+            build/Debug/app.exe
+            build/Debug/test_app.exe
+            build/Debug/mathlib.lib
+      
+      - name: Upload Embedded Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: embedded-build
+          path: |
+            build_embedded

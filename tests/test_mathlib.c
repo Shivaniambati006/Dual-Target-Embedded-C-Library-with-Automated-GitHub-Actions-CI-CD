@@ -73,21 +73,55 @@ int main()
         printf("FAIL: subtract(-5,-2)\n");
         failed++;
     }
-
     /* Test multiply() */
-if (multiply(3, 4) == 12)
+    if (multiply(3, 4) == 12)
+    {
+        printf("PASS: multiply(3,4)\n");
+        passed++;
+    }
+    else
+    {
+        printf("FAIL: multiply(3,4)\n");
+        failed++;
+    }
+/* Test multiply() with zero */
+if (multiply(5, 0) == 0)
 {
-    printf("PASS: multiply(3,4)\n");
+    printf("PASS: multiply(5,0)\n");
     passed++;
 }
 else
 {
-    printf("FAIL: multiply(3,4)\n");
+    printf("FAIL: multiply(5,0)\n");
+    failed++;
+}
+
+/* Test multiply() with negative number */
+if (multiply(-3, 4) == -12)
+{
+    printf("PASS: multiply(-3,4)\n");
+    passed++;
+}
+else
+{
+    printf("FAIL: multiply(-3,4)\n");
+    failed++;
+}
+
+/* Test multiply() with two negatives */
+if (multiply(-3, -4) == 12)
+{
+    printf("PASS: multiply(-3,-4)\n");
+    passed++;
+}
+else
+{
+    printf("FAIL: multiply(-3,-4)\n");
     failed++;
 }
 
 /* Test divide() */
-if (divide(10, 2) == 5)
+if (divide(10, 2) == 5.0f)
 {
     printf("PASS: divide(10,2)\n");
     passed++;
@@ -99,7 +133,7 @@ else
 }
 
 /* Divide by zero */
-if (divide(10, 0) == 0)
+if (divide(10, 0) == 0.0f)
 {
     printf("PASS: divide(10,0)\n");
     passed++;
@@ -107,6 +141,41 @@ if (divide(10, 0) == 0)
 else
 {
     printf("FAIL: divide(10,0)\n");
+    failed++;
+}
+/* Test divide() with decimal result */
+if (divide(7, 2) == 3.5f)
+{
+    printf("PASS: divide(7,2)\n");
+    passed++;
+}
+else
+{
+    printf("FAIL: divide(7,2)\n");
+    failed++;
+}
+
+/* Test divide() with negative value */
+if (divide(-8, 2) == -4.0f)
+{
+    printf("PASS: divide(-8,2)\n");
+    passed++;
+}
+else
+{
+    printf("FAIL: divide(-8,2)\n");
+    failed++;
+}
+
+/* Test divide() with zero numerator */
+if (divide(0, 5) == 0.0f)
+{
+    printf("PASS: divide(0,5)\n");
+    passed++;
+}
+else
+{
+    printf("FAIL: divide(0,5)\n");
     failed++;
 }
 
