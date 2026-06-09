@@ -74,6 +74,66 @@ int main()
         failed++;
     }
 
+    /* Test multiply() */
+if (multiply(3, 4) == 12)
+{
+    printf("PASS: multiply(3,4)\n");
+    passed++;
+}
+else
+{
+    printf("FAIL: multiply(3,4)\n");
+    failed++;
+}
+
+/* Test divide() */
+if (divide(10, 2) == 5)
+{
+    printf("PASS: divide(10,2)\n");
+    passed++;
+}
+else
+{
+    printf("FAIL: divide(10,2)\n");
+    failed++;
+}
+
+/* Divide by zero */
+if (divide(10, 0) == 0)
+{
+    printf("PASS: divide(10,0)\n");
+    passed++;
+}
+else
+{
+    printf("FAIL: divide(10,0)\n");
+    failed++;
+}
+
+/* Test max() */
+if (max(10, 5) == 10)
+{
+    printf("PASS: max(10,5)\n");
+    passed++;
+}
+else
+{
+    printf("FAIL: max(10,5)\n");
+    failed++;
+}
+
+/* Test min() */
+if (min(10, 5) == 5)
+{
+    printf("PASS: min(10,5)\n");
+    passed++;
+}
+else
+{
+    printf("FAIL: min(10,5)\n");
+    failed++;
+}
+
     printf("\nTests Passed: %d\n", passed);
     printf("Tests Failed: %d\n", failed);
 

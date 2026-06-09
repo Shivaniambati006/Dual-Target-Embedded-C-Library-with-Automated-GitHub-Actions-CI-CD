@@ -1,0 +1,10 @@
+^D:\GITHUB\ADVANCED MICROPROCESSOR\DUAL-TARGET-C-LIBRARY\BUILD_EMBEDDED\CMAKEFILES\0337D9C95362C4973DBE72D5C1B4F549\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/GITHUB/Advanced Microprocessor/dual-target-c-library" "-BD:/GITHUB/Advanced Microprocessor/dual-target-c-library/build_embedded" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/GITHUB/Advanced Microprocessor/dual-target-c-library/build_embedded/DualTargetCLibrary.slnx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
