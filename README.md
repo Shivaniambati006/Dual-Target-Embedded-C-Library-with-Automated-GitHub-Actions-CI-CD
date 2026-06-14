@@ -10,8 +10,6 @@
 ![Tests](https://img.shields.io/badge/Tests-17%20Cases-success?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
 
-> A production-grade, dual-target C library engineered with a strict Platform Abstraction Layer (PAL), conditional CMake cross-compilation, and a fully automated CI/CD pipeline delivering test reports and API documentation on every commit.
-> Built across 16 progressive engineering milestones, this project demonstrates embedded systems design principles — defensive programming, hardware/software decoupling, and firmware simulation — applied at every layer of the stack.
 
 ---
 
