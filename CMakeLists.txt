@@ -36,3 +36,9 @@ add_executable(test_app
 )
 
 target_link_libraries(test_app mathlib)
+
+add_executable(embedded_demo
+    examples/embedded_main.c
+)
+
+target_link_libraries(embedded_demo mathlib)

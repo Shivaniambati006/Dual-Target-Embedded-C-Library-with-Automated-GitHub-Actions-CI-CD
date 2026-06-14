@@ -1,210 +1,148 @@
 #include <stdio.h>
 #include "mathlib.h"
 
-int main()
+/* Helper function for PASS */
+void test_pass(FILE *report, const char *test_name, int *passed)
+{
+    printf("PASS: %s\n", test_name);
+    fprintf(report, "PASS: %s\n", test_name);
+    (*passed)++;
+}
+
+/* Helper function for FAIL */
+void test_fail(FILE *report, const char *test_name, int *failed)
+{
+    printf("FAIL: %s\n", test_name);
+    fprintf(report, "FAIL: %s\n", test_name);
+    (*failed)++;
+}
+
+int main(void)
 {
     int passed = 0;
     int failed = 0;
 
-    /* Test add() */
+    FILE *report = fopen("reports/test_report.txt", "w");
+
+    if (report == NULL)
+    {
+        printf("Could not create report file.\n");
+        return 1;
+    }
+
+    fprintf(report, "========== UNIT TEST REPORT ==========\n\n");
+
+    /* add() tests */
     if (add(2, 3) == 5)
-    {
-        printf("PASS: add(2,3)\n");
-        passed++;
-    }
+        test_pass(report, "add(2,3)", &passed);
     else
-    {
-        printf("FAIL: add(2,3)\n");
-        failed++;
-    }
+        test_fail(report, "add(2,3)", &failed);
 
     if (add(0, 0) == 0)
-    {
-        printf("PASS: add(0,0)\n");
-        passed++;
-    }
+        test_pass(report, "add(0,0)", &passed);
     else
-    {
-        printf("FAIL: add(0,0)\n");
-        failed++;
-    }
+        test_fail(report, "add(0,0)", &failed);
 
     if (add(-2, 2) == 0)
-    {
-        printf("PASS: add(-2,2)\n");
-        passed++;
-    }
+        test_pass(report, "add(-2,2)", &passed);
     else
-    {
-        printf("FAIL: add(-2,2)\n");
-        failed++;
-    }
+        test_fail(report, "add(-2,2)", &failed);
 
-    /* Test subtract() */
+    /* subtract() tests */
     if (subtract(10, 4) == 6)
-    {
-        printf("PASS: subtract(10,4)\n");
-        passed++;
-    }
+        test_pass(report, "subtract(10,4)", &passed);
     else
-    {
-        printf("FAIL: subtract(10,4)\n");
-        failed++;
-    }
+        test_fail(report, "subtract(10,4)", &failed);
 
     if (subtract(5, 5) == 0)
-    {
-        printf("PASS: subtract(5,5)\n");
-        passed++;
-    }
+        test_pass(report, "subtract(5,5)", &passed);
     else
-    {
-        printf("FAIL: subtract(5,5)\n");
-        failed++;
-    }
+        test_fail(report, "subtract(5,5)", &failed);
 
     if (subtract(-5, -2) == -3)
-    {
-        printf("PASS: subtract(-5,-2)\n");
-        passed++;
-    }
+        test_pass(report, "subtract(-5,-2)", &passed);
     else
-    {
-        printf("FAIL: subtract(-5,-2)\n");
-        failed++;
-    }
-    /* Test multiply() */
+        test_fail(report, "subtract(-5,-2)", &failed);
+
+    /* multiply() tests */
     if (multiply(3, 4) == 12)
+        test_pass(report, "multiply(3,4)", &passed);
+    else
+        test_fail(report, "multiply(3,4)", &failed);
+
+    if (multiply(5, 0) == 0)
+        test_pass(report, "multiply(5,0)", &passed);
+    else
+        test_fail(report, "multiply(5,0)", &failed);
+
+    if (multiply(-3, 4) == -12)
+        test_pass(report, "multiply(-3,4)", &passed);
+    else
+        test_fail(report, "multiply(-3,4)", &failed);
+
+    if (multiply(-3, -4) == 12)
+        test_pass(report, "multiply(-3,-4)", &passed);
+    else
+        test_fail(report, "multiply(-3,-4)", &failed);
+
+    /* divide() tests */
+    if (divide(10, 2) == 5.0f)
+        test_pass(report, "divide(10,2)", &passed);
+    else
+        test_fail(report, "divide(10,2)", &failed);
+
+    if (divide(10, 0) == 0.0f)
+        test_pass(report, "divide(10,0)", &passed);
+    else
+        test_fail(report, "divide(10,0)", &failed);
+
+    if (divide(7, 2) == 3.5f)
+        test_pass(report, "divide(7,2)", &passed);
+    else
+        test_fail(report, "divide(7,2)", &failed);
+
+    if (divide(-8, 2) == -4.0f)
+        test_pass(report, "divide(-8,2)", &passed);
+    else
+        test_fail(report, "divide(-8,2)", &failed);
+
+    if (divide(0, 5) == 0.0f)
+        test_pass(report, "divide(0,5)", &passed);
+    else
+        test_fail(report, "divide(0,5)", &failed);
+
+    /* max() test */
+    if (max(10, 5) == 10)
+        test_pass(report, "max(10,5)", &passed);
+    else
+        test_fail(report, "max(10,5)", &failed);
+
+    /* min() test */
+    if (min(10, 5) == 5)
+        test_pass(report, "min(10,5)", &passed);
+    else
+        test_fail(report, "min(10,5)", &failed);
+
+    printf("\n=====================================\n");
+    printf("Tests Passed : %d\n", passed);
+    printf("Tests Failed : %d\n", failed);
+
+    fprintf(report, "\n=====================================\n");
+    fprintf(report, "Tests Passed : %d\n", passed);
+    fprintf(report, "Tests Failed : %d\n", failed);
+
+    if (failed == 0)
     {
-        printf("PASS: multiply(3,4)\n");
-        passed++;
+        printf("RESULT : ALL TESTS PASSED\n");
+        fprintf(report, "RESULT : ALL TESTS PASSED\n");
     }
     else
     {
-        printf("FAIL: multiply(3,4)\n");
-        failed++;
+        printf("RESULT : SOME TESTS FAILED\n");
+        fprintf(report, "RESULT : SOME TESTS FAILED\n");
     }
-/* Test multiply() with zero */
-if (multiply(5, 0) == 0)
-{
-    printf("PASS: multiply(5,0)\n");
-    passed++;
-}
-else
-{
-    printf("FAIL: multiply(5,0)\n");
-    failed++;
-}
 
-/* Test multiply() with negative number */
-if (multiply(-3, 4) == -12)
-{
-    printf("PASS: multiply(-3,4)\n");
-    passed++;
-}
-else
-{
-    printf("FAIL: multiply(-3,4)\n");
-    failed++;
-}
-
-/* Test multiply() with two negatives */
-if (multiply(-3, -4) == 12)
-{
-    printf("PASS: multiply(-3,-4)\n");
-    passed++;
-}
-else
-{
-    printf("FAIL: multiply(-3,-4)\n");
-    failed++;
-}
-
-/* Test divide() */
-if (divide(10, 2) == 5.0f)
-{
-    printf("PASS: divide(10,2)\n");
-    passed++;
-}
-else
-{
-    printf("FAIL: divide(10,2)\n");
-    failed++;
-}
-
-/* Divide by zero */
-if (divide(10, 0) == 0.0f)
-{
-    printf("PASS: divide(10,0)\n");
-    passed++;
-}
-else
-{
-    printf("FAIL: divide(10,0)\n");
-    failed++;
-}
-/* Test divide() with decimal result */
-if (divide(7, 2) == 3.5f)
-{
-    printf("PASS: divide(7,2)\n");
-    passed++;
-}
-else
-{
-    printf("FAIL: divide(7,2)\n");
-    failed++;
-}
-
-/* Test divide() with negative value */
-if (divide(-8, 2) == -4.0f)
-{
-    printf("PASS: divide(-8,2)\n");
-    passed++;
-}
-else
-{
-    printf("FAIL: divide(-8,2)\n");
-    failed++;
-}
-
-/* Test divide() with zero numerator */
-if (divide(0, 5) == 0.0f)
-{
-    printf("PASS: divide(0,5)\n");
-    passed++;
-}
-else
-{
-    printf("FAIL: divide(0,5)\n");
-    failed++;
-}
-
-/* Test max() */
-if (max(10, 5) == 10)
-{
-    printf("PASS: max(10,5)\n");
-    passed++;
-}
-else
-{
-    printf("FAIL: max(10,5)\n");
-    failed++;
-}
-
-/* Test min() */
-if (min(10, 5) == 5)
-{
-    printf("PASS: min(10,5)\n");
-    passed++;
-}
-else
-{
-    printf("FAIL: min(10,5)\n");
-    failed++;
-}
-
-    printf("\nTests Passed: %d\n", passed);
-    printf("Tests Failed: %d\n", failed);
+    fclose(report);
 
     return failed;
 }

@@ -36,6 +36,12 @@ jobs:
       - name: Run Tests
         run: ./build/test_app
 
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Unit-Test-Report
+          path: reports/test_report.txt
+
   embedded-build:
 
     runs-on: ubuntu-latest

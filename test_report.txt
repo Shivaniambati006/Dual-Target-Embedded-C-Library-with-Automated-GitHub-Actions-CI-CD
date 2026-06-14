@@ -1,0 +1,24 @@
+========== UNIT TEST REPORT ==========
+
+PASS: add(2,3)
+PASS: add(0,0)
+PASS: add(-2,2)
+PASS: subtract(10,4)
+PASS: subtract(5,5)
+PASS: subtract(-5,-2)
+PASS: multiply(3,4)
+PASS: multiply(5,0)
+PASS: multiply(-3,4)
+PASS: multiply(-3,-4)
+PASS: divide(10,2)
+PASS: divide(10,0)
+PASS: divide(7,2)
+PASS: divide(-8,2)
+PASS: divide(0,5)
+PASS: max(10,5)
+PASS: min(10,5)
+
+=====================================
+Tests Passed : 17
+Tests Failed : 0
+RESULT : ALL TESTS PASSED
