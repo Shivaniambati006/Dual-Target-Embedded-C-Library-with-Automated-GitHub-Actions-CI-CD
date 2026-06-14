@@ -1,8 +1,6 @@
 # Dual-Target Embedded C Library with Automated GitHub Actions CI/CD
 
 <p align="center">
-  <img src="image_0.png" alt="Project Architecture and CI/CD Poster" width="80%">
-</p>
 
 ![Language](https://img.shields.io/badge/Language-C11-blue?style=flat-square&logo=c)
 ![Build System](https://img.shields.io/badge/Build-CMake-064F8C?style=flat-square&logo=cmake)
@@ -12,6 +10,7 @@
 ![Tests](https://img.shields.io/badge/Tests-17%20Cases-success?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
 
+</p>
 
 ---
 
