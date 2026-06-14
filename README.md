@@ -12,6 +12,9 @@
 
 </p>
 
+<p align="center">
+  <img src="image_0.png" alt="Project Architecture and CI/CD Poster" width="80%">
+</p>
 ---
 
 ## Core Architectural Features
